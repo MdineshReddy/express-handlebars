@@ -1,0 +1,19 @@
+<h1>Welcome</h1>
+
+{{#if published}}
+  <p>{{content}}</p>
+{{else}}
+  <p>Content Not Published</p>
+{{/if}}
+
+<ul>
+  {{#each people}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+<br />
+<span>First Name is
+  {{person.firstName}}
+  and Last Name is
+  {{person.lastName}}
+</span>
